@@ -1,0 +1,5 @@
+FROM alpine:3.8
+USER root
+
+RUN apk add --no-cache gcc libc-dev
+RUN apk add bash
