@@ -1,0 +1,10 @@
+version: '3'
+services:
+  csharp:
+    restart: always
+    build: .
+    container_name: 'csharp'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
